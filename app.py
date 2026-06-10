@@ -424,8 +424,6 @@ with panel_col:
     st.divider()
     comments_panel(entry)
 
-# ── Apply keyboard actions AFTER rendering (so total_pages is known) ──────────
-_apply_kbd_action(kbd_action, entry, total_pages, len(filtered))
 
 # ── Subject-level progress bar ────────────────────────────────────────────────
 st.divider()
