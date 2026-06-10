@@ -21,8 +21,7 @@ from pdf_utils import (
 from ui import (
     pdf_viewer, pdf_nav_bar, pdf_info_panel,
     read_fav_controls, tags_panel, comments_panel,
-    subject_progress, inject_keyboard_shortcuts,
-    render_kbd_input, resume_banner,
+    subject_progress, resume_banner,
     build_markdown_export,
 )
 
@@ -369,9 +368,6 @@ if st.session_state._loaded_key != entry.key:
     st.session_state._loaded_key = entry.key
     st.session_state._show_resume = (saved_page > 1)
     st.session_state._saved_page  = saved_page
-
-# ── Render keyboard sentinel (hidden) ─────────────────────────────────────────
-kbd_action = render_kbd_input()
 
 # ── Log to recent activity ────────────────────────────────────────────────────
 db.log_recent(entry.key, RECENT_LIMIT)
