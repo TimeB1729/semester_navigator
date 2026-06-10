@@ -176,24 +176,6 @@ with st.sidebar:
                     jump_to_key(key)
                     st.rerun()
 
-    # Keyboard shortcut legend
-    with st.expander("⌨ Keyboard Shortcuts", expanded=False):
-        st.markdown("""
-| Key | Action |
-|-----|--------|
-| `A` `K` `PageUp` | Previous Page |
-| `D` `J` `PageDown` | Next Page |
-| `Home` | First Page |
-| `End` | Last Page |
-| `←` `H` | Previous PDF |
-| `→` `L` | Next PDF |
-| `+` | Zoom In |
-| `-` | Zoom Out |
-| `R` | Toggle Read |
-| `F` | Toggle Favourite |
-| `N` | Focus Notes |
-        """)
-
 
 # ══════════════════════════════════════════════════════════════════════════════
 # VIEW: DASHBOARD
