@@ -283,11 +283,6 @@ if st.session_state.view == "search":
                     + "</div>",
                     unsafe_allow_html=True,
                 )
-            with col_jump:
-                if st.button("Open", key=f"srch_{e.key}",
-                             use_container_width=True):
-                    jump_to_key(e.key)
-                    st.rerun()
         if not results:
             st.info("No matches found.")
     else:
