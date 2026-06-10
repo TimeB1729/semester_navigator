@@ -412,7 +412,7 @@ with viewer_col:
         st.session_state.page_num = page_num
 
     pdf_viewer(entry, page_num, st.session_state.zoom)
-    inject_keyboard_shortcuts()
+
 
 
 with panel_col:
